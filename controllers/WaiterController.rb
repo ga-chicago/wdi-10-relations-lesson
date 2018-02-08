@@ -5,4 +5,27 @@ class WaiterController < ApplicationController
 		@waiters.to_json
 	end
 
+	post '/' do
+		@waiter = Waiter.new
+		@waiter.name = params[:name]
+		@waiter.save
+		@waiter.to_json
+	end
+
+	put '/:id' do
+		@waiter = Waiter.find params[:id]
+		@waiter.name = params[:name]
+		@waiter.save
+		@waiter.to_json
+	end
+
+	delete '/:id' do
+		@waiter = Waiter.find params[:id]
+		wname = @waiter.name
+		@waiter.delete
+		{
+			message: "Waiter #{wname} deleted"
+		}.to_json
+	end
+
 end
