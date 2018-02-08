@@ -5,6 +5,12 @@ class WaiterController < ApplicationController
 		@waiters.to_json
 	end
 
+	get '/:id/orders' do
+		@waiter = Waiter.find params[:id]
+		stuff = @waiter.itemorders
+		stuff.to_json
+	end 
+
 	post '/' do
 		@waiter = Waiter.new
 		@waiter.name = params[:name]

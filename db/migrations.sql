@@ -21,4 +21,4 @@ CREATE TABLE itemorders(
 	--ticket_id INT REFERENCES ticket(id),
 	notes VARCHAR(128),
 	open BOOLEAN
-)
+);

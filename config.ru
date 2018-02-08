@@ -6,6 +6,8 @@ require './controllers/MenuitemController'
 
 require './models/WaiterModel'
 require './models/MenuitemModel'
+require './models/ItemorderModel'
+
 
 map ('/') {
 	run ApplicationController
