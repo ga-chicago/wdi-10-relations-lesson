@@ -7,7 +7,8 @@ class WaiterController < ApplicationController
 
 	get '/:id/orders' do
 		@waiter = Waiter.find params[:id]
-		stuff = @waiter.itemorders
+		# stuff = @waiter.itemorders
+		stuff = @waiter.menuitems
 		stuff.to_json
 	end 
 
