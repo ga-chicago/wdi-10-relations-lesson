@@ -1,0 +1,14 @@
+INSERT INTO waiters  (name) VALUES ('Anthony');
+INSERT INTO waiters (name) VALUES ('Charles');
+INSERT INTO waiters (name) VALUES ('Jackson');
+INSERT INTO waiters (name) VALUES ('Travis');
+INSERT INTO menuitems (name) VALUES ('Hot Dog');
+INSERT INTO menuitems (name) VALUES ('Omelette');
+INSERT INTO menuitems (name) VALUES ('Salad');
+INSERT INTO menuitems (name) VALUES ('Pasta');
+INSERT INTO itemorders (menuitem_id, waiter_id, notes, open) VALUES (1, 1, 'chicago style', true);
+INSERT INTO itemorders (menuitem_id, waiter_id, notes, open) VALUES (2, 1, 'egg whites only', true);
+INSERT INTO itemorders (menuitem_id, waiter_id, notes, open) VALUES (1, 2, 'mustard and kraut plz', true);
+INSERT INTO itemorders (menuitem_id, waiter_id, notes, open) VALUES (2, 2, 'bacon broc moz garlic', true);
+INSERT INTO itemorders (menuitem_id, waiter_id, notes, open) VALUES (3, 3, 'cobb salad', true);
+INSERT INTO itemorders (menuitem_id, waiter_id, notes, open) VALUES (3, 4, 'mushroom rav', true);
